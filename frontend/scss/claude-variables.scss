@@ -1,0 +1,262 @@
+// Claude-Inspired Dark Theme Bootstrap SCSS Variables
+// Import this BEFORE bootstrap to override defaults
+
+// Claude Dark Color Palette
+$claude-orange: #FF8A65;
+$claude-orange-light: #FFAB91;
+$claude-orange-dark: #FF5722;
+$claude-dark-bg: #0F0F0F;
+$claude-dark-surface: #1A1A1A;
+$claude-dark-surface-elevated: #222222;
+$claude-dark-surface-hover: #2A2A2A;
+$claude-dark-border: #333333;
+$claude-dark-border-light: #404040;
+$claude-text-primary: #E8E8E8;
+$claude-text-secondary: #B8B8B8;
+$claude-text-muted: #888888;
+$claude-text-disabled: #666666;
+
+// Additional accent colors for dark theme
+$claude-purple: #BB86FC;
+$claude-blue: #64B5F6;
+$claude-emerald: #4DB6AC;
+$claude-amber: #FFB74D;
+$claude-red: #EF5350;
+
+// Override Bootstrap Theme Colors
+$primary: $claude-orange;
+$secondary: #555555;
+$success: $claude-emerald;
+$info: $claude-blue;
+$warning: $claude-amber;
+$danger: $claude-red;
+$light: $claude-dark-surface-elevated;
+$dark: $claude-dark-bg;
+
+// Background and Text Colors
+$body-bg: $claude-dark-bg;
+$body-color: $claude-text-primary;
+$text-color: $claude-text-primary;
+$text-muted: $claude-text-muted;
+$link-color: $claude-orange;
+$link-hover-color: $claude-orange-light;
+
+// Border and Border Radius
+$border-color: $claude-dark-border;
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.25rem;
+
+// Typography
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$headings-font-weight: 600;
+$headings-color: $claude-text-primary;
+
+// Buttons
+$btn-border-radius: $border-radius;
+$btn-border-radius-sm: $border-radius-sm;
+$btn-border-radius-lg: $border-radius-lg;
+$btn-font-weight: 500;
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.5rem;
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 2rem;
+
+// Button Colors Override
+$btn-primary-color: $claude-dark-bg;
+$btn-primary-bg: $claude-orange;
+$btn-primary-border-color: $claude-orange;
+$btn-primary-hover-color: $claude-dark-bg;
+$btn-primary-hover-bg: $claude-orange-light;
+$btn-primary-hover-border-color: $claude-orange-light;
+
+$btn-secondary-color: $claude-text-secondary;
+$btn-secondary-bg: $claude-dark-surface-elevated;
+$btn-secondary-border-color: $claude-dark-border-light;
+$btn-secondary-hover-color: $claude-text-primary;
+$btn-secondary-hover-bg: $claude-dark-surface-hover;
+$btn-secondary-hover-border-color: #555555;
+
+$btn-outline-primary-color: $claude-orange;
+$btn-outline-primary-border-color: $claude-orange;
+$btn-outline-primary-hover-color: $claude-dark-bg;
+$btn-outline-primary-hover-bg: $claude-orange;
+
+// Cards
+$card-bg: $claude-dark-surface;
+$card-border-color: $claude-dark-border;
+$card-border-radius: $border-radius-lg;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+$card-cap-bg: $claude-dark-surface-elevated;
+$card-cap-color: $claude-text-primary;
+$card-cap-padding-y: 1rem;
+$card-cap-padding-x: 1.5rem;
+$card-color: $claude-text-primary;
+
+// Forms
+$input-bg: $claude-dark-surface-elevated;
+$input-color: $claude-text-primary;
+$input-border-color: $claude-dark-border-light;
+$input-border-radius: $border-radius;
+$input-focus-border-color: $claude-orange;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(255, 138, 101, 0.25);
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+$input-placeholder-color: $claude-text-muted;
+$form-label-font-weight: 500;
+$form-label-color: $claude-text-secondary;
+
+// Tables
+$table-bg: $claude-dark-surface;
+$table-color: $claude-text-primary;
+$table-hover-bg: $claude-dark-surface-hover;
+$table-border-color: $claude-dark-border;
+$table-head-bg: $claude-dark-surface-elevated;
+$table-head-color: $claude-text-primary;
+$table-striped-bg: rgba($claude-dark-surface-elevated, 0.5);
+
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-brand-font-weight: 700;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-dark-color: $claude-text-secondary;
+$navbar-dark-hover-color: $claude-text-primary;
+$navbar-dark-active-color: $claude-orange;
+$navbar-dark-brand-color: $claude-text-primary;
+$navbar-dark-brand-hover-color: $claude-orange;
+
+// Alerts
+$alert-border-radius: $border-radius;
+$alert-padding-y: 1rem;
+$alert-padding-x: 1.25rem;
+
+// Alert Color Customizations for Dark Theme
+$alert-primary-color: $claude-orange-light;
+$alert-primary-bg: rgba($claude-orange, 0.15);
+$alert-primary-border-color: rgba($claude-orange, 0.3);
+
+$alert-success-color: #80CBC4;
+$alert-success-bg: rgba($claude-emerald, 0.15);
+$alert-success-border-color: rgba($claude-emerald, 0.3);
+
+$alert-info-color: #90CAF9;
+$alert-info-bg: rgba($claude-blue, 0.15);
+$alert-info-border-color: rgba($claude-blue, 0.3);
+
+$alert-warning-color: #FFCC02;
+$alert-warning-bg: rgba($claude-amber, 0.15);
+$alert-warning-border-color: rgba($claude-amber, 0.3);
+
+$alert-danger-color: #FFCDD2;
+$alert-danger-bg: rgba($claude-red, 0.15);
+$alert-danger-border-color: rgba($claude-red, 0.3);
+
+// Badges
+$badge-font-weight: 500;
+$badge-padding-y: 0.5rem;
+$badge-padding-x: 0.75rem;
+$badge-border-radius: $border-radius;
+
+// Dropdowns
+$dropdown-bg: $claude-dark-surface-elevated;
+$dropdown-color: $claude-text-primary;
+$dropdown-border-color: $claude-dark-border-light;
+$dropdown-border-radius: $border-radius;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 1rem;
+$dropdown-link-color: $claude-text-secondary;
+$dropdown-link-hover-color: $claude-text-primary;
+$dropdown-link-hover-bg: $claude-dark-surface-hover;
+$dropdown-link-active-color: $claude-text-primary;
+$dropdown-link-active-bg: $claude-orange;
+
+// Modals
+$modal-content-bg: $claude-dark-surface;
+$modal-content-color: $claude-text-primary;
+$modal-content-border-color: $claude-dark-border-light;
+$modal-content-border-radius: $border-radius-lg;
+$modal-header-padding: 1.5rem;
+$modal-body-padding: 1.5rem;
+$modal-footer-padding: 1rem 1.5rem;
+$modal-header-border-color: $claude-dark-border;
+$modal-footer-border-color: $claude-dark-border;
+
+// Pagination
+$pagination-bg: $claude-dark-surface;
+$pagination-color: $claude-text-secondary;
+$pagination-border-color: $claude-dark-border;
+$pagination-hover-color: $claude-text-primary;
+$pagination-hover-bg: $claude-dark-surface-hover;
+$pagination-hover-border-color: $claude-dark-border-light;
+$pagination-active-color: $claude-dark-bg;
+$pagination-active-bg: $claude-orange;
+$pagination-active-border-color: $claude-orange;
+$pagination-disabled-color: $claude-text-disabled;
+$pagination-disabled-bg: $claude-dark-surface;
+$pagination-disabled-border-color: $claude-dark-border;
+
+// Progress bars
+$progress-bg: $claude-dark-surface-elevated;
+$progress-bar-bg: $claude-orange;
+$progress-border-radius: $border-radius;
+
+// Toasts
+$toast-bg: rgba($claude-dark-surface-elevated, 0.95);
+$toast-color: $claude-text-primary;
+$toast-border-color: $claude-dark-border;
+$toast-border-radius: $border-radius;
+$toast-header-color: $claude-text-secondary;
+$toast-header-bg: $claude-dark-surface-elevated;
+$toast-header-border-color: $claude-dark-border;
+
+// List groups
+$list-group-bg: $claude-dark-surface;
+$list-group-color: $claude-text-primary;
+$list-group-border-color: $claude-dark-border;
+$list-group-hover-bg: $claude-dark-surface-hover;
+$list-group-active-color: $claude-dark-bg;
+$list-group-active-bg: $claude-orange;
+$list-group-active-border-color: $claude-orange;
+
+// Accordion
+$accordion-bg: $claude-dark-surface;
+$accordion-color: $claude-text-primary;
+$accordion-border-color: $claude-dark-border;
+$accordion-button-bg: $claude-dark-surface;
+$accordion-button-color: $claude-text-primary;
+$accordion-button-active-bg: $claude-dark-surface-elevated;
+$accordion-button-active-color: $claude-text-primary;
+
+// Offcanvas
+$offcanvas-bg-color: $claude-dark-surface;
+$offcanvas-color: $claude-text-primary;
+$offcanvas-border-color: $claude-dark-border;
+
+// Shadows for dark theme
+$box-shadow: 0 0.125rem 0.25rem rgba(black, 0.3);
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(black, 0.2);
+$box-shadow-lg: 0 1rem 3rem rgba(black, 0.4);
+
+// Spacers (optional - for consistent spacing)
+$spacer: 1rem;
+
+// Component specific spacing
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-x: 1rem;
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.75rem;
+
+// Close button for dark theme
+$btn-close-color: $claude-text-secondary;
+
+// Code blocks (if using)
+$code-color: $claude-orange-light;
+$kbd-color: $claude-text-primary;
+$kbd-bg: $claude-dark-surface-elevated;
+$pre-color: $claude-text-primary;

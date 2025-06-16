@@ -1,15 +1,15 @@
 from injector import inject
 from pymongo import MongoClient
 
-YOUTUBE_VIDEO_COLLECTION = 'youtube_videos'
-PIPELINE_COLLECTION = 'pipelines'
+MESSAGES_COLLECTION = 'messages'
+TASKS_COLLECTION = 'messages'
 
 
 class Db:
     @inject
     def __init__(self, client: MongoClient):
         self.client = client
-        self.db = self.client['admin']
+        self.db = self.client['tminn']
 
     def get_collection(self, collection_name):
         return self.db[collection_name]
@@ -20,15 +20,14 @@ class Db:
     def get_client(self):
         return self.client
 
-    def get_youtube_video_item_by_id(self, video_id):
-        return self.get_collection(YOUTUBE_VIDEO_COLLECTION).find_one({'video_id': video_id})
+    def get_messages(self, status=None, limit=100, offset=0, from_id=None, to_id=None):
+        pass
 
-    def insert_or_update_pipeline_item(self, pipeline_object):
-        self.get_collection(PIPELINE_COLLECTION).update_one(
-            {'video_id': pipeline_object.video_id},
-            {'$set': pipeline_object.to_dict()},
-            upsert=True
-        )
+    def upsert_message(self, message: dict):
+        pass
 
-    def get_pipeline_item_by_id(self, video_id):
-        return self.get_collection(PIPELINE_COLLECTION).find_one({'video_id': video_id})
+    def gets_tasks(self, status=None, limit=100, offset=0, from_id=None, to_id=None):
+        pass
+
+    def upsert_task(self, task: dict):
+        pass

@@ -2,7 +2,7 @@ from injector import inject
 from pymongo import MongoClient
 
 MESSAGES_COLLECTION = 'messages'
-TASKS_COLLECTION = 'messages'
+TASKS_COLLECTION = 'tasks'
 
 
 class Db:
@@ -20,14 +20,3 @@ class Db:
     def get_client(self):
         return self.client
 
-    def get_messages(self, status=None, limit=100, offset=0, from_id=None, to_id=None):
-        pass
-
-    def upsert_message(self, message: dict):
-        pass
-
-    def gets_tasks(self, status=None, limit=100, offset=0, from_id=None, to_id=None):
-        pass
-
-    def upsert_task(self, task: dict):
-        pass

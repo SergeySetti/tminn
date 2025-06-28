@@ -1,5 +1,9 @@
 from agents import function_tool
 
+# This is a workaround to allow dependency injection for tools
+# without exposing injected dependencies in the function signature
+# which causes Pydantic schema generation errors with the agents library.
+_tasks_repository = None
 
 @function_tool
 def check_tasks_board(
@@ -19,6 +23,15 @@ def check_tasks_board(
     :param to_id: Maximum task ID to include.
     :return: List of tasks matching the criteria.
     """
-    from app.db import TasksRepository
-    tasks_repo = TasksRepository()
-    return tasks_repo.get_tasks(status, limit, offset, from_id, to_id)
+    if _tasks_repository is None:
+        raise RuntimeError("TasksRepository not initialized for tools.")
+    return _tasks_repository.get_tasks(status, limit, offset, from_id, to_id)
+
+@function_tool
+def do_nothing():
+    """
+    A placeholder function that does nothing.
+    :return: None
+    """
+    print("This function intentionally does nothing.")
+    return None

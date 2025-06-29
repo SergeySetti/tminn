@@ -30,7 +30,7 @@ def check_tasks_board(
 @function_tool
 def do_nothing():
     """
-    A placeholder function that does nothing.
+    A tool that intentionally does nothing.
     :return: None
     """
     print("This function intentionally does nothing.")
